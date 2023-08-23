@@ -18,4 +18,9 @@ function generatePassword() {
     return "";
   }
 
+  var useUppercase = confirm("Do you want to include uppercase letters?");
+  var useLowercase = confirm("Do you want to include lowercase letters?");
+  var useNumbers = confirm("Do you want to include numbers?");
+  var useSpecialCharacters = confirm("Do you want to include special characters?");
+
 }
