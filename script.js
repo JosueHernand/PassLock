@@ -23,4 +23,14 @@ function generatePassword() {
   var useNumbers = confirm("Do you want to include numbers?");
   var useSpecialCharacters = confirm("Do you want to include special characters?");
 
+  if (!useUppercase && !useLowercase && !useNumbers && !useSpecialCharacters) {
+    alert("You must select at least one criteria.");
+    return "";
+  }
+
+  var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+  var numberChars = "0123456789";
+  var specialChars = "!@#$%^&*()-_=+[]{}|;:,.<>?";
+
 }
