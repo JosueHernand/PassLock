@@ -33,4 +33,17 @@ function generatePassword() {
   var numberChars = "0123456789";
   var specialChars = "!@#$%^&*()-_=+[]{}|;:,.<>?";
 
+  var allChars = "";
+  if (useUppercase) allChars += uppercaseChars;
+  if (useLowercase) allChars += lowercaseChars;
+  if (useNumbers) allChars += numberChars;
+  if (useSpecialCharacters) allChars += specialChars;
+
+  var generatedPassword = "";
+  for (var i = 0; i < passwordLength; i++) {
+    var randomIndex = Math.floor(Math.random() * allChars.length);
+    generatedPassword += allChars[randomIndex];
+  }
+
+  return generatedPassword;
 }
