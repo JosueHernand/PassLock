@@ -15,6 +15,8 @@ When using this site you click on generate a password then a couple of prompts s
 certain amount of characters then if you want upper case or lowers case with special characters. After it should auto generate a password based on
 the ones you accepted or denied.  
 
+Website link [Click Here](https://josuehernand.github.io/PassLock/)  
+
 ![Planner](./assets/images/passlock.png)
 
 ## Credits
